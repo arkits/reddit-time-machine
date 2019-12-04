@@ -22,7 +22,7 @@
                 min-width="290px"
               >
                 <template v-slot:activator="{ on }">
-                  <v-text-field v-model="startDate" label="Start Date" readonly v-on="on"></v-text-field>
+                  <v-text-field  v-model="startDate" label="Start Date" outlined readonly v-on="on"></v-text-field>
                 </template>
                 <v-date-picker v-model="startDate" @input="startDateMenu = false"></v-date-picker>
               </v-menu>
@@ -37,7 +37,7 @@
                 min-width="290px"
               >
                 <template v-slot:activator="{ on }">
-                  <v-text-field v-model="endDate" label="End Date" readonly v-on="on"></v-text-field>
+                  <v-text-field outlined v-model="endDate" label="End Date" readonly v-on="on"></v-text-field>
                 </template>
                 <v-date-picker v-model="endDate" @input="endDateMenu = false"></v-date-picker>
               </v-menu>
@@ -54,7 +54,7 @@
     </div>
 
     <div v-if="inputSuccess">
-      <v-alert type="success">{{inputSuccess}}</v-alert>
+      <v-alert type="success"><pre>{{inputSuccess}}</pre></v-alert>
     </div>
   </div>
 </template>
