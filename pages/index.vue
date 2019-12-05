@@ -76,7 +76,7 @@ export default {
       subredditName: "pcgaming",
       inputError: "",
       apiResponse: "",
-      startDate: new Date(new Date().setDate(new Date().getDate()-1)).toISOString().substr(0, 10),
+      startDate: new Date(new Date().setDate(new Date().getDate()-30)).toISOString().substr(0, 10),
       startDateMenu: false,
       endDate: new Date().toISOString().substr(0, 10),
       endDateMenu: false,
